@@ -63,4 +63,10 @@ public class Book {
 	public String toString() {
 		return ("Title: " + title + " " + "Author: " + author + " " + "ISBN: " + ISBN + " " + "Price: " + price);
 	}
+	
+	@Override
+	public boolean equals(Object other) {
+		Book x = (Book) other;
+		return ISBN.equals(x.ISBN);
+	}
 }
