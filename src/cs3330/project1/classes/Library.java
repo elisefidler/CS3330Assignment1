@@ -13,6 +13,16 @@ public class Library {
 		return false;
 	}
 	
+	public Book searchByISBN(String ISBN) {
+		for (int i = 0; i < 5; i++) {
+			String x = books[i].getISBN().replaceAll("\\P{Print}","");
+			if (x.equals(ISBN)) {
+				return books[i];
+			}
+		}
+		return null;
+	}
+	
 	public void displayBooks() {
 		int i = 0;
 		while (books[i] != null) {
