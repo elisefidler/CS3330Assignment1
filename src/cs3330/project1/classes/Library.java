@@ -13,6 +13,26 @@ public class Library {
 		return false;
 	}
 	
+	public boolean removeBook(Book book) {
+		for (int i = 0; i < 5; i++) {
+			if (books[i] == book) {
+				Book[] temp = new Book[5];
+				for (int j = 0; j < i; j++) {
+					temp[j] = books[j];
+				}
+				for (int j = i; j < books.length - 1; j++) {
+					temp[j] = books[j+1];
+				}
+				for (int k = 0; k < temp.length; k++) {
+					books[k] = temp[k];
+				}
+				count--;
+				return true;
+			}
+		}
+		return false;
+	} 
+	
 	public Book searchByISBN(String ISBN) {
 		for (int i = 0; i < 5; i++) {
 			String x = books[i].getISBN().replaceAll("\\P{Print}","");
