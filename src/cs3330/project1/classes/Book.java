@@ -51,4 +51,11 @@ public class Book {
 	public double getPrice() {
 		return price;
 	}
+	
+	public Book(Book aBook) {
+		title = aBook.title;
+		author = aBook.author;
+		ISBN = aBook.ISBN;
+		price = aBook.price;
+	}
 }
