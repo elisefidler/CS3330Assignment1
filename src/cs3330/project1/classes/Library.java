@@ -12,4 +12,12 @@ public class Library {
 		}
 		return false;
 	}
+	
+	public void displayBooks() {
+		int i = 0;
+		while (books[i] != null) {
+			System.out.println(books[i].toString());
+			i++;
+		}
+	}
 }
