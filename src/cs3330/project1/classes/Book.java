@@ -58,4 +58,9 @@ public class Book {
 		ISBN = aBook.ISBN;
 		price = aBook.price;
 	}
+	
+	@Override 
+	public String toString() {
+		return ("Title: " + title + " " + "Author: " + author + " " + "ISBN: " + ISBN + " " + "Price: " + price);
+	}
 }
