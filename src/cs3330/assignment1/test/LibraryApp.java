@@ -3,6 +3,11 @@ package cs3330.assignment1.test;
 import cs3330.assignment1.classes.Book;
 import cs3330.assignment1.classes.Library;
 
+/**
+ * Test class. Tests Library.java and Book.java by creating a library of three books
+ * and calling various methods and constructors.
+ */
+
 public class LibraryApp {
 
 	public static void main(String[] args) {
