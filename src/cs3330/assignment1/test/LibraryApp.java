@@ -1,7 +1,7 @@
-package cs3330.project1.test;
+package cs3330.assignment1.test;
 
-import cs3330.project1.classes.Book;
-import cs3330.project1.classes.Library;
+import cs3330.assignment1.classes.Book;
+import cs3330.assignment1.classes.Library;
 
 public class LibraryApp {
 
@@ -16,7 +16,17 @@ public class LibraryApp {
 		myLibrary.addBook(book3);
 		
 		System.out.println("Book with ISBN 1503280780: " + myLibrary.searchByISBN("1503280780"));
-
+		
+		System.out.println("All books in library:");
+		myLibrary.displayBooks();
+		
+		myLibrary.removeBook(book1);
+		System.out.println("All books in library after removing a book that exists:");
+		myLibrary.displayBooks();
+		
+		myLibrary.removeBook(book1);
+		System.out.println("All books in library after removing a book that doesn't exist:");
+		myLibrary.displayBooks();
 
 	}
 
