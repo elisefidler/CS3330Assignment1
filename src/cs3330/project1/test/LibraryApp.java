@@ -14,6 +14,9 @@ public class LibraryApp {
 		myLibrary.addBook(book1);
 		myLibrary.addBook(book2);
 		myLibrary.addBook(book3);
+		
+		System.out.println("Book with ISBN 1503280780: " + myLibrary.searchByISBN("1503280780"));
+
 
 	}
 
